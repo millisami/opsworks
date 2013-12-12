@@ -1,11 +1,12 @@
 #
-# Cookbook Name:: aws_tagliners
+# Cookbook Name:: aws_postgresql
 # Recipe:: default
 #
 # Copyright (C) 2013 Millisami
 #
 
-# include_recipe "postgresql91" # Set up the apt repository and install dependent packages
+node.set['build_essential']['compiletime'] = true
+include_recipe "build-essential"
 
 include_recipe "postgresql::server" # Object-relational SQL database, version 9.x server
 include_recipe "postgresql::client" # Front-end programs for PostgreSQL 9.x

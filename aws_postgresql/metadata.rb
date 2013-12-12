@@ -1,4 +1,4 @@
-name             'aws_tagliners'
+name             'aws_postgresql'
 maintainer       'Millisami'
 maintainer_email 'millisami@gmail.com'
 license          'MIT'
